@@ -141,7 +141,19 @@ class CMSSearchPlugin(CMSPluginBase):
     def render(self, context, instance, placeholder):
         return context
 
+
+class CMSToolsPlugin(CMSPluginBase):
+    model = CMSPlugin
+    module = _('entries')
+    name = _("Administration tools")
+    render_template = "zinnia/cms/tools.html"
+
+    def render(self, context, instance, placeholder):
+        return context
+
+
 plugin_pool.register_plugin(CMSLatestEntriesPlugin)
 plugin_pool.register_plugin(CMSSelectedEntriesPlugin)
 plugin_pool.register_plugin(CMSRandomEntriesPlugin)
 plugin_pool.register_plugin(CMSSearchPlugin)
+plugin_pool.register_plugin(CMSToolsPlugin)
