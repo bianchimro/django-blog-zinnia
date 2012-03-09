@@ -178,5 +178,6 @@ class CMSToolsPlugin(CMSPluginBase):
 plugin_pool.register_plugin(CMSLatestEntriesPlugin)
 plugin_pool.register_plugin(CMSSelectedEntriesPlugin)
 plugin_pool.register_plugin(CMSRandomEntriesPlugin)
+plugin_pool.register_plugin(CMSCategoryEntriesPlugin)
 plugin_pool.register_plugin(CMSSearchPlugin)
 plugin_pool.register_plugin(CMSToolsPlugin)
