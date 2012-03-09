@@ -145,6 +145,8 @@ class CMSCategoryEntriesPlugin(CMSPluginBase):
 
     def render(self, context, instance, placeholder):
         """Update the context with plugin's data"""
+        
+        entries = instance.category.entries_published()
         context.update(
             {'entries': entries
             })
