@@ -138,7 +138,7 @@ class CMSCategoryEntriesPlugin(CMSPluginBase):
     """Django-cms plugin for random entries"""
     module = _('entries')
     model = CategoryEntriesPlugin
-    name = _('Random entries')
+    name = _('Category entries')
     render_template = 'zinnia/cms/category_entries.html'
     fields = ('category')
     text_enabled = True
