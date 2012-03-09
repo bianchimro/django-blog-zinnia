@@ -140,7 +140,7 @@ class CMSCategoryEntriesPlugin(CMSPluginBase):
     model = CategoryEntriesPlugin
     name = _('Category entries')
     render_template = 'zinnia/cms/category_entries.html'
-    fields = ('category')
+    fields = ('category',)
     text_enabled = True
 
     def render(self, context, instance, placeholder):
