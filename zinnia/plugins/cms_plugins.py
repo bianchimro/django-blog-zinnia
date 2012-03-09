@@ -147,7 +147,7 @@ class CMSCategoryEntriesPlugin(CMSPluginBase):
         """Update the context with plugin's data"""
         context.update(
             {'entries': entries
-            }
+            })
         return context
 
     def icon_src(self, instance):
