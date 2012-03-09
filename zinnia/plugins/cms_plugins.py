@@ -11,10 +11,12 @@ from cms.plugin_pool import plugin_pool
 
 from zinnia.models import Entry
 from zinnia.models import Author
+from zinnia.models import Category
 from zinnia.managers import tags_published
 from zinnia.plugins.models import RandomEntriesPlugin
 from zinnia.plugins.models import LatestEntriesPlugin
 from zinnia.plugins.models import SelectedEntriesPlugin
+from zinnia.plugins.models import CategoryEntriesPlugin
 
 
 class CMSLatestEntriesPlugin(CMSPluginBase):
@@ -125,6 +127,27 @@ class CMSRandomEntriesPlugin(CMSPluginBase):
             {'number_of_entries': instance.number_of_entries,
              'template_to_render': str(instance.template_to_render) or
              'zinnia/tags/random_entries.html'})
+        return context
+
+    def icon_src(self, instance):
+        """Icon source of the plugin"""
+        return settings.STATIC_URL + u'zinnia/img/plugin.png'
+        
+
+class CMSCategoryEntriesPlugin(CMSPluginBase):
+    """Django-cms plugin for random entries"""
+    module = _('entries')
+    model = CategoryEntriesPlugin
+    name = _('Random entries')
+    render_template = 'zinnia/cms/category_entries.html'
+    fields = ('category')
+    text_enabled = True
+
+    def render(self, context, instance, placeholder):
+        """Update the context with plugin's data"""
+        context.update(
+            {'entries': entries
+            }
         return context
 
     def icon_src(self, instance):
