@@ -30,6 +30,7 @@ The following features are present in my fork only:
 .. _`django-blog-zinnia`: https://github.com/Fantomas42/django-blog-zinnia
 .. _`django-cms`: https://github.com/divio/django-cms
 
+
 ==================
 Django Blog Zinnia
 ==================
