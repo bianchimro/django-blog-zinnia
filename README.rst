@@ -16,7 +16,7 @@ Features already merged in `django-blog-zinnia`
 These features have been developed in my fork and merged in the upstream repo  `django-blog-zinnia`_.
 If you are interested in these features, please use Fantomas42 repo instead:
 
-* A `django-cms`_ plugin for displaying a block-search form in a django-cms placeholder
+* A `django-cms` plugin for displaying a block-search form in a django-cms placeholder
 
 Features in my fork
 ===================
