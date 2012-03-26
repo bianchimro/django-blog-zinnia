@@ -1,3 +1,7 @@
+** IMPORTANT: Maintenance of this fork has been discontinued!! PLEASE DO NOT USE IT IN PRODUCTION**
+** As the cms plugins of django-blog-zinnia have been moved to the separate package
+Fantomas42/cmsplugin-zinnia, refer to that or to my fork (bianchimro/cmsplugin-zinnia) for latest cms plugins. **
+
 ===============
 About this fork
 ===============
